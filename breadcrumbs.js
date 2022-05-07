@@ -23,10 +23,12 @@ console.log (path)
 var typeofpath = "article";
 var level = 0;
 
-if (path.includes(typeofpath)) {
-  console.log ("Содержит");
+if (path.includes("article")) {
   level = 3;
-}
+} else if (path.includes("category")) {level = 2} 
+else {level = 1}
+
+console.log ("Уровень страницы - ", level)
 
 // console.log (parent)
 // console.log (core)
