@@ -14,7 +14,7 @@ Build by Mistxs for favourite  YCLIENTS team
 // parent.insertBefore(core, before);
 
 
-let parent = document.querySelector('.container');
+let parent = document.querySelector('section .container');
 
 let p = document.createElement('p');
 p.innerHTML = '!';
