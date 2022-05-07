@@ -5,7 +5,7 @@ Build by Mistxs for favourite  YCLIENTS team
 */
 
 
-
+// Создание DOM ядра крошек
 let parent = document.querySelector('section .container');
 let core = document.createElement('div');
 
@@ -16,5 +16,9 @@ core.innerHTML = '<ul><li><a href="https://secure.usedesk.ru/settings/support">�
 parent.prepend(core);
 
 
-console.log (parent)
-console.log (core)
+// Получение адреса страницы
+var path = document.location.pathname;
+console.log (path)
+
+// console.log (parent)
+// console.log (core)
