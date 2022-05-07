@@ -16,7 +16,7 @@ core.innerHTML = '<ul><li><a href="https://secure.usedesk.ru/settings/support">�
 parent.prepend(core);
 
 
-// Получение адреса страницы
+// Получение адреса страницы и присвоение вложенности будущих крошек
 var path = document.location.pathname;
 console.log (path)
 
@@ -28,7 +28,12 @@ if (path.includes("article")) {
 } else if (path.includes("category")) {level = 2} 
 else {level = 1}
 
-console.log ("Уровень страницы - ", level)
 
-// console.log (parent)
-// console.log (core)
+// Парсинг данных со страницы для крошек
+
+var collection = "null";
+var category = "null";
+var article = "null";
+
+collection = document.querySelector('#nav-mobile li.active');
+console.log (collection)
