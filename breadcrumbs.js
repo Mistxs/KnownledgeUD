@@ -35,5 +35,5 @@ var collection = "null";
 var category = "null";
 var article = "null";
 
-collection = document.querySelector('#nav-mobile li.active');
+collection = document.querySelector('#nav-mobile li.active').innerHTML;
 console.log (collection)
