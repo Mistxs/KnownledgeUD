@@ -20,5 +20,13 @@ parent.prepend(core);
 var path = document.location.pathname;
 console.log (path)
 
+var typeofpath = "article";
+var level = 0;
+
+if path includes(typeofpath) {
+  console.log ("Содержит");
+  level = 3;
+}
+
 // console.log (parent)
 // console.log (core)
