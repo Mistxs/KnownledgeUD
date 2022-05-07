@@ -12,3 +12,7 @@ core.id = "breadcrumbs"
 core.innerHTML = '<ul><li><a href="https://secure.usedesk.ru/settings/support">База знаний</a></li><li class="active">Тест БЗ</li></ul>';
 
 document.insertBefore(core, before);
+
+console.log (parent)
+console.log (before)
+console.log (core)
