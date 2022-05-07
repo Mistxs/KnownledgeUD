@@ -23,7 +23,7 @@ console.log (path)
 var typeofpath = "article";
 var level = 0;
 
-if path includes(typeofpath) {
+if (path.includes(typeofpath)) {
   console.log ("Содержит");
   level = 3;
 }
