@@ -26,3 +26,7 @@ Build by Mistxs for favourite  YCLIENTS team
       content: ""; /* Добавляемый текст */ 
       padding: 2px; /* Поля вокруг текста */ 
     }
+
+.hide {
+    display: none;
+}
