@@ -29,10 +29,11 @@ else {level = 1}
 // Парсинг данных со страницы для крошек
 
 var collection = document.querySelector('#nav-mobile li.active').innerHTML;
-var category = document.querySelector('div.collection a.active').innerHTML;;
-var article = "null";
+var category = document.querySelector('div.collection a.active').innerHTML;
+var article = document.querySelector('section .row h4').innerHTML;
 
 console.log (collection);
 console.log (category);
+console.log (article);
 
-core.innerHTML = '<ul><li>' + collection + '</li><li class="active">Тест БЗ</li></ul>';
+core.innerHTML = '<ul><li>' + collection + '</li> <li>' + category + '</li> <li>' + article + ' </li></ul>';
