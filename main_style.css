@@ -8,13 +8,21 @@ Build by Mistxs for favourite  YCLIENTS team
 
 #breadcrumb li {
     list-style-type: none;
-    font-size: 0.8em;
+    font-size: 0.9em;
     position: relative;
     display: inline-block;
-    float: left;
-    /* background: #2980b9; */
-    /* color: #fff; */
     text-decoration: none;
-    /* padding: 0 10px 0 20px; */
     transition: all 0.1s ease-in-out;
 }
+
+#breadcrumb li a:hover { color: #eb722e; }
+
+#breadcrumb li a:after {
+      content: " / "; /* Добавляемый текст */ 
+      padding: 2px; /* Поля вокруг текста */ 
+    }
+
+#breadcrumb li a:nth-child(3):after {
+      content: ""; /* Добавляемый текст */ 
+      padding: 2px; /* Поля вокруг текста */ 
+    }
