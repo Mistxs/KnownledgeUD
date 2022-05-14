@@ -35,4 +35,4 @@ var article = "null";
 console.log (collection);
 console.log (category);
 
-core.innerHTML = '<ul><li><a href="https://secure.usedesk.ru/settings/support">База знаний</a></li><li class="active">Тест БЗ</li></ul>';
+core.innerHTML = '<ul><li>${collection}</li><li class="active">Тест БЗ</li></ul>';
