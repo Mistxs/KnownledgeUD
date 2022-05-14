@@ -5,49 +5,16 @@ v. 0.01a
 Build by Mistxs for favourite  YCLIENTS team 
 */
 
-#breadcrumb {
-  line-height: 40px;
-  font-size: 20px;
-  height: 40px;
-  margin: 0 10px 10px 0;
-}
-#breadcrumb > li {
-  position: relative;
-  display: inline-block;
-  float: left;
-  background: #2980b9;
-  color: #fff;
-  text-decoration: none;
-  padding: 0 10px 0 20px;
-  transition: all 0.1s ease-in-out;
-}
-#breadcrumb > li:before {
-  content: "";
-  left: 0;
-  top: 0;
-  display: block;
-  position: absolute;
-  border-width: 20px 0 20px 10px;
-  border-style: solid;
-  border-color: transparent transparent transparent #2980b9;
-  transition: all 0.1s ease-in-out;
-}
-#breadcrumb > li:hover,
-#breadcrumb > li .active {
-  background: #409ad5;
-  color: #fff;
-}
-#breadcrumb > li:hover + li:before,
-#breadcrumb > li .active + li:before {
-  border-color: transparent transparent transparent #409ad5;
-}
-#breadcrumb > li:first-child {
-  border-radius: 4px 0 0 4px;
-}
-#breadcrumb > li:first-child:before {
-  display: none;
-}
-#breadcrumb > li:last-child {
-  padding-right: 20px;
-  border-radius: 0 4px 4px 0;
+
+#breadcrumb li {
+    list-style-type: none;
+    font-size: 0.8em;
+    position: relative;
+    display: inline-block;
+    float: left;
+    /* background: #2980b9; */
+    /* color: #fff; */
+    text-decoration: none;
+    /* padding: 0 10px 0 20px; */
+    transition: all 0.1s ease-in-out;
 }
