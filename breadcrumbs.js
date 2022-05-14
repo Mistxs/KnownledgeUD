@@ -26,9 +26,9 @@ if (path.includes("article")) {
   level = 2;
   var li_sub = document.querySelector('#breadcrumb .second_li');
   var li_end = document.querySelector('#breadcrumb .third_li');
-  li_end.classList.add("hide");
   console.log (level);
-   console.log ("Li_sub = " + li_sub);
+  console.log ("Li_sub = " + li_sub);
+  console.log ("Li_end = " + li_end);
 
 } 
 else {level = 1}
