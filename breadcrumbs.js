@@ -10,7 +10,6 @@ let parent = document.querySelector('section .container');
 let core = document.createElement('div');
 
 core.id = "breadcrumbs"
-core.innerHTML = '<ul><li><a href="https://secure.usedesk.ru/settings/support">База знаний</a></li><li class="active">Тест БЗ</li></ul>';
 
 
 parent.prepend(core);
@@ -18,9 +17,7 @@ parent.prepend(core);
 
 // Получение адреса страницы и присвоение вложенности будущих крошек
 var path = document.location.pathname;
-console.log (path)
 
-var typeofpath = "article";
 var level = 0;
 
 if (path.includes("article")) {
@@ -35,6 +32,7 @@ var collection = document.querySelector('#nav-mobile li.active').innerHTML;
 var category = document.querySelector('div.collection a.active').innerHTML;;
 var article = "null";
 
-
+console.log (collection);
 console.log (category);
 
+core.innerHTML = '<ul><li><a href="https://secure.usedesk.ru/settings/support">База знаний</a></li><li class="active">Тест БЗ</li></ul>';
