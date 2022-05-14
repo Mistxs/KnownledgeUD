@@ -22,7 +22,13 @@ var level = 0;
 
 if (path.includes("article")) {
   level = 3;
-} else if (path.includes("category")) {level = 2} 
+} else if (path.includes("category")) {
+  level = 2;
+  var li_sub = document.querySelector('#breadcrumb li:nth-child(2)');
+  console.log (level);
+   console.log (li_sub);
+
+} 
 else {level = 1}
 
 
