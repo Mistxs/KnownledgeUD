@@ -26,7 +26,7 @@ if (path.includes("article")) {
   level = 2;
   var li_sub = document.querySelector('#breadcrumb .second_li');
   var li_end = document.querySelector('#breadcrumb .third_li');
-  //li_end.classList.add('hide');
+  li_end.classList.add("hide");
   console.log (level);
    console.log ("Li_sub = " + li_sub);
 
@@ -44,4 +44,4 @@ console.log (collection);
 console.log (category);
 console.log (article);
 
-core.innerHTML = '<ul><li class="first_li">' + collection + '</li> <li class="second_li> <a href="'+ category.href +'">' + category.innerHTML + '</a></li> <li class="third_li>' + article + ' </li></ul>';
+core.innerHTML = '<ul><li class="first_li">' + collection + '</li> <li class="second_li> <a href="'+ category.href +'">' + category.innerHTML + '</a></li> <li class="third_li">' + article + ' </li></ul>';
