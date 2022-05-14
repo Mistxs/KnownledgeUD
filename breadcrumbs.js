@@ -13,11 +13,12 @@ core.id = "breadcrumb"
 
 // Парсинг данных со страницы для крошек
 
+var url = document.location.origin;
 var collection = document.querySelector('#nav-mobile li.active').innerHTML;
 var category = document.querySelector('div.collection a.active');
 var article = document.querySelector('section .row h4').innerHTML;
 
-core.innerHTML = '<ul><li> <a href="/"> Главная </a> </li> <li class="first_li">' + collection + '</li> <li class="second_li"> <a href="'+ category.href +'">' + category.innerHTML + '</a></li> <li class="third_li">' + article + ' </li></ul>';
+core.innerHTML = '<ul><li> <a href="' + url + '"> Главная </a> </li> <li class="first_li">' + collection + '</li> <li class="second_li"> <a href="'+ category.href +'">' + category.innerHTML + '</a></li> <li class="third_li">' + article + ' </li></ul>';
 
 parent.prepend(core);
 
