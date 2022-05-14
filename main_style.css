@@ -12,7 +12,7 @@ Build by Mistxs for favourite  YCLIENTS team
     position: relative;
     display: inline-block;
     text-decoration: none;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.5s;
 }
 
 #breadcrumb li a:hover { color: #eb722e; }
@@ -22,11 +22,12 @@ Build by Mistxs for favourite  YCLIENTS team
       padding: 2px; /* Поля вокруг текста */ 
     }
 
+#breadcrumb li a:hover:after {
+    color: #039be5;
+    }
+
 #breadcrumb li a:nth-child(3):after {
       content: ""; /* Добавляемый текст */ 
       padding: 2px; /* Поля вокруг текста */ 
     }
 
-.hide {
-    display: none;
-}
