@@ -24,7 +24,8 @@ if (path.includes("article")) {
   level = 3;
 } else if (path.includes("category")) {
   level = 2;
-  var li_sub = document.querySelector('#breadcrumb li:nth-child(2)');
+  var li_sub = document.querySelector('#breadcrumb .second_li');
+  document.querySelector('#breadcrumb .third_li').classList.add('hide');
   console.log (level);
    console.log (li_sub);
 
@@ -42,4 +43,4 @@ console.log (collection);
 console.log (category);
 console.log (article);
 
-core.innerHTML = '<ul><li>' + collection + '</li> <li> <a href="'+ category.href +'">' + category.innerHTML + '</a></li> <li>' + article + ' </li></ul>';
+core.innerHTML = '<ul><li class="first_li">' + collection + '</li> <li class="second_li> <a href="'+ category.href +'">' + category.innerHTML + '</a></li> <li class="third_li>' + article + ' </li></ul>';
