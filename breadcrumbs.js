@@ -35,4 +35,4 @@ var article = "null";
 console.log (collection);
 console.log (category);
 
-core.innerHTML = '<ul><li>${collection}</li><li class="active">Тест БЗ</li></ul>';
+core.innerHTML = '<ul><li>' + collection + '</li><li class="active">Тест БЗ</li></ul>';
