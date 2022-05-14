@@ -5,3 +5,96 @@ v. 0.01a
 Build by Mistxs for favourite  YCLIENTS team 
 */
 
+.breadcrumb {
+  line-height: 40px;
+  font-size: 20px;
+  height: 40px;
+  margin: 0 10px 10px 0;
+}
+.breadcrumb > a {
+  position: relative;
+  display: inline-block;
+  float: left;
+  background: #2980b9;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px 0 20px;
+  transition: all 0.1s ease-in-out;
+}
+.breadcrumb > a:before {
+  content: "";
+  left: 0;
+  top: 0;
+  display: block;
+  position: absolute;
+  border-width: 20px 0 20px 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent #2980b9;
+  transition: all 0.1s ease-in-out;
+}
+.breadcrumb > a:hover,
+.breadcrumb > a .active {
+  background: #409ad5;
+  color: #fff;
+}
+.breadcrumb > a:hover + a:before,
+.breadcrumb > a .active + a:before {
+  border-color: transparent transparent transparent #409ad5;
+}
+.breadcrumb > a:first-child {
+  border-radius: 4px 0 0 4px;
+}
+.breadcrumb > a:first-child:before {
+  display: none;
+}
+.breadcrumb > a:last-child {
+  padding-right: 20px;
+  border-radius: 0 4px 4px 0;
+}
+.breadcrumb.red > a {
+  background: #c0392b;
+}
+.breadcrumb.red > a + a:before {
+  border-color: transparent transparent transparent #c0392b;
+}
+.breadcrumb.red > a:hover {
+  background: #d65548;
+}
+.breadcrumb.red > a:hover + a:before {
+  border-color: transparent transparent transparent #d65548;
+}
+.breadcrumb.green > a {
+  background: #16a085;
+}
+.breadcrumb.green > a + a:before {
+  border-color: transparent transparent transparent #16a085;
+}
+.breadcrumb.green > a:hover {
+  background: #1ccdaa;
+}
+.breadcrumb.green > a:hover + a:before {
+  border-color: transparent transparent transparent #1ccdaa;
+}
+
+/** Ignore below. It's for the title and background. :p */
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: #fff;
+}
+
+h1 {
+  color: #555;
+}
+
+.wrapper {
+  position: absolute;
+  height: 150px;
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  margin: -150px 0 0 -250px;
+  z-index: 500;
+}
