@@ -25,9 +25,10 @@ if (path.includes("article")) {
 } else if (path.includes("category")) {
   level = 2;
   var li_sub = document.querySelector('#breadcrumb .second_li');
-  document.querySelector('#breadcrumb .third_li').classList.add('hide');
+  var li_end = document.querySelector('#breadcrumb .third_li');
+  li_end.classList.add('hide');
   console.log (level);
-   console.log (li_sub);
+   console.log ("Li_sub = " + li_sub);
 
 } 
 else {level = 1}
