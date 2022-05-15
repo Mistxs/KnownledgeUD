@@ -31,9 +31,7 @@ else if (path.includes("collection")) {
 // Поменяем логотип
 
 var logo = document.querySelector('.brand-logo');
-var logoimg = document.createElement('img');
-logoimg.src = "https://www.yclients.com/assets/yclients/2019-template/img/logo.svg";
-logo.prepend(logoimg);
+logo.innerHTML = '<img src="https://www.yclients.com/assets/yclients/2019-template/img/logo.svg"> <p> Внутренняя База знаний </p>'
 
 
 
