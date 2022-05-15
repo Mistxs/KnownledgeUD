@@ -33,11 +33,20 @@ Build by Mistxs for favourite  YCLIENTS team
 
 
 
-a.collection-item {
+.row a.collection-item {
     color: #039be5 !important;
     display: block;
-    transition: all 0.3s;
+    
     margin: 15px 0px 15px 15px;
+}
+
+section .row a {
+        color: #039be5 !important;
+        transition: all 0.3s;
+}
+
+section .row a:hover {
+    color: #17272f!important;
 }
 
 a.collection-item:hover {
