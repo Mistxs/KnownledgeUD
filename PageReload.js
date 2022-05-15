@@ -19,8 +19,8 @@ else if (path.includes("collection")) {
   level = 1;
   var listofpages = document.querySelector('.container .collection');
   var pagecont = document.querySelector('.container .row').lastElementChild;
-  document.querySelector('.container .collection').innerHTML = pagecont;
-  pagecont.innerHTML = listofpages;
+  document.querySelector('.container .collection').innerHTML = pagecont.innerHTML;
+  pagecont.innerHTML = listofpages.innerHTML;
   // core.innerHTML = '<ul><li> <a href="/"> Главная </a> </li> <li>' + collection + '</li></ul>'
 }
 
