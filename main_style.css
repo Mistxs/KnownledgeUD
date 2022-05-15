@@ -100,6 +100,7 @@ a.collection-item:hover {
 
 .collection a.collection-item:not(.active):hover {
     color: #eb722e!important;
+    background-color: inherit;
 }
 
 section .container .row div:nth-child(2) h4 {
