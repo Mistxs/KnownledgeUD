@@ -30,3 +30,4 @@ else if (path.includes("collection")) {
 
 console.log ("Уровень страницы - "+level);
 console.log (listofpages);
+console.log (pagecont);
