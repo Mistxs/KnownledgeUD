@@ -115,4 +115,36 @@ section .container .row div:nth-child(2) h4 {
 }
 
 
-/*  */ 
+/* Logo styles */ 
+
+nav .brand-logo {
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    /* padding-left: 150px; */
+    padding: 0;
+    padding-left: 170px;
+    white-space: nowrap;
+}
+
+.brand-logo img {
+    width: 150px;
+    /* line-height: 30px; */
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    /* right: 0; */
+}
+
+
+
+
+
+
+
+
+
+
