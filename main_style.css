@@ -123,10 +123,16 @@ nav .brand-logo {
 
 .brand-logo img {
     width: 150px;
-    margin-top: 15px;
 }
 
-
+.brand-logo p {
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0px;
+    padding: 0;
+    padding-left: 10px;
+    border-left: 1px solid black;
+}
 
 
 
