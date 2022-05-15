@@ -129,9 +129,9 @@ section .container .row div:nth-child(2) h4 {
     display: inline-block;
     margin: 0px;
     padding: 0;
-    font-size: 23px;
+    font-size: 21px;
     padding-left: 10px;
-    border-left: 1px solid black;
+    margin-top: -1px;
 }
 
 
