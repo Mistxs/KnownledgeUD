@@ -13,6 +13,7 @@ if (path.includes("article")) {
 } 
 else if (path.includes("category")) {
   level = 2;
+  
   // core.innerHTML = '<ul><li> <a href="/"> Главная </a> </li> <li class="first_li">' + collection + '</li> <li>' + category.innerHTML + '</li></ul>';
 } 
 else if (path.includes("collection")) {
@@ -24,7 +25,6 @@ else if (path.includes("collection")) {
   listofpages.innerHTML = clone.innerHTML;
   delete clone; // удаляем буфер из памяти
 
-
 }
 
 
@@ -34,6 +34,3 @@ else if (path.includes("collection")) {
 // Отладка
 
 console.log ("Уровень страницы - "+level);
-console.log (listofpages.innerHTML);
-console.log (pagecont.innerHTML);
-console.log (clone.innerHTML);

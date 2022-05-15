@@ -45,12 +45,19 @@ a.collection-item:hover {
     color: #17272f!important;
 }
 
-.with-header h4
+.with-header h4, .with-header h5
 {
-    font-size: 20px;
-    padding: 0px 15px 15px 15px;
+    font-size: 20px!important;
+    padding: 0px 15px 15px 15px!important;
 }
 
 .popular-articles {
     font-size: 14px!important;
+}
+
+
+section .container .row div:nth-child(2) h4 {
+    font-size: 1.64rem;
+    line-height: 110%;
+    margin: 0.82rem 0 0.656rem 0;
 }
