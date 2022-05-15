@@ -116,20 +116,14 @@ section .container .row div:nth-child(2) h4 {
 
 
 /* Logo styles */ 
-/*
-nav .brand-logo {
-    position: absolute;
-    color: #fff;
-    display: inline-block;
-    font-size: 20px;
 
-    padding: 0;
-    padding-left: 170px;
-    white-space: nowrap;
-}*/
+nav .brand-logo {
+    font-size: 20px!important;
+}
 
 .brand-logo img {
     width: 150px;
+    margin-top: 15px;
 }
 
 
