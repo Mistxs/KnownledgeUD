@@ -1,5 +1,5 @@
 /* Pagereload script for Knowledge Base Usedesk 
-version 0.01a
+version 0.09a
 
 Build by Mistxs for favourite  YCLIENTS team
 */
@@ -19,11 +19,11 @@ else if (path.includes("collection")) {
   level = 1;
   var listofpages = document.querySelector('.container .collection'); // левый список со страницами
   var pagecont = document.querySelector('.container .row').lastElementChild;
-  var buffer = pagecont; // записываем в буфер все что внутри pagecont
+  const buffer = pagecont; // записываем в буфер все что внутри pagecont
 
 
 
-  pagecont.innerHTML = listofpages.innerHTML; // меняем содержимое страницы на список статей
+  document.querySelector('.container .row').lastElementChild.innerHTML = listofpages.innerHTML; // меняем содержимое страницы на список статей
   document.querySelector('.container .collection').innerHTML = "херабора"; // переписыаем список страниц на популярные статьи
   // delete buffer; // удаляем буфер из памяти
 
