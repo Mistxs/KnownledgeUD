@@ -18,10 +18,16 @@ else if (path.includes("category")) {
 else if (path.includes("collection")) {
   level = 1;
   var listofpages = document.querySelector('.container .collection');
+  console.log ("первый проход listofpages" + listofpages);
   var pagecont = document.querySelector('.container .row').lastElementChild;
+  console.log ("первый проход pagecont" + pagecont);
   var buffer = pagecont; // записываем в буфер все что внутри pagecont
+  console.log ("записываем буфер" + buffer);
   pagecont.innerHTML = listofpages.innerHTML; // меняем содержимое страницы на список статей
+  console.log ("переписываем pagecont" + pagecont);
+  console.log ("второй проход listofpages" + listofpages);
   listofpages.innerHTML = buffer.innerHTML; // переписыаем список страниц на популярные статьи
+  console.log ("третий проход listofpages" + listofpages);
   delete buffer; // удаляем буфер из памяти
 
   
