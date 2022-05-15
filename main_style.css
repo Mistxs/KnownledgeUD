@@ -31,3 +31,26 @@ Build by Mistxs for favourite  YCLIENTS team
       padding: 2px; /* Поля вокруг текста */ 
     }
 
+
+
+a.collection-item {
+    color: #039be5 !important;
+    display: block;
+    transition: all 0.3s;
+    margin: 15px 0px 15px 15px;
+}
+
+a.collection-item:hover {
+    outline: 0;
+    color: #17272f!important;
+}
+
+.with-header h4
+{
+    font-size: 20px;
+    padding: 0px 15px 15px 15px;
+}
+
+.popular-articles {
+    font-size: 14px!important;
+}

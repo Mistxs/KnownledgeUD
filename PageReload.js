@@ -24,8 +24,7 @@ else if (path.includes("collection")) {
   listofpages.innerHTML = clone.innerHTML;
   delete clone; // удаляем буфер из памяти
 
-  
-  // core.innerHTML = '<ul><li> <a href="/"> Главная </a> </li> <li>' + collection + '</li></ul>'
+
 }
 
 
