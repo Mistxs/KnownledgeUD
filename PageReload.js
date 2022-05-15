@@ -19,8 +19,12 @@ else if (path.includes("collection")) {
   level = 1;
   var listofpages = document.querySelector('.container .collection');
   var pagecont = document.querySelector('.container .row').lastElementChild;
-  document.querySelector('.container .collection').innerHTML = pagecont.innerHTML;
-  pagecont.innerHTML = listofpages.innerHTML;
+  var buffer = pagecont; // записываем в буфер все что внутри pagecont
+  pagecont.innerHTML = listofpages.innerHTML; // меняем содержимое страницы на список статей
+  listofpages.innerHTML = buffer.innerHTML; // переписыаем список страниц на популярные статьи
+  delete buffer; // удаляем буфер из памяти
+
+  
   // core.innerHTML = '<ul><li> <a href="/"> Главная </a> </li> <li>' + collection + '</li></ul>'
 }
 
