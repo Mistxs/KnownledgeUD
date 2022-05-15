@@ -32,6 +32,7 @@ Build by Mistxs for favourite  YCLIENTS team
     }
 
 
+/* Styles for PageReload */ 
 
 .row a.collection-item {
     color: #039be5 !important;
@@ -112,3 +113,6 @@ section .container .row div:nth-child(2) h4 {
 .collection-header {
     border-bottom: 1px solid #e0e0e0;
 }
+
+
+/*  */ 

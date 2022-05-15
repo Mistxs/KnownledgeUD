@@ -13,7 +13,7 @@ if (path.includes("article")) {
 } 
 else if (path.includes("category")) {
   level = 2;
-  
+
   // core.innerHTML = '<ul><li> <a href="/"> Главная </a> </li> <li class="first_li">' + collection + '</li> <li>' + category.innerHTML + '</li></ul>';
 } 
 else if (path.includes("collection")) {
@@ -27,6 +27,13 @@ else if (path.includes("collection")) {
 
 }
 
+
+// Поменяем логотип
+
+var logo = document.querySelector('.brand-logo');
+var logoimg = document.createElement('img');
+logoimg.src = "https://www.yclients.com/assets/yclients/2019-template/img/logo.svg";
+logo.prepend(logoimg);
 
 
 
