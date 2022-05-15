@@ -18,17 +18,17 @@ else if (path.includes("category")) {
 else if (path.includes("collection")) {
   level = 1;
   var listofpages = document.querySelector('.container .collection');
-  console.log ("первый проход listofpages" + listofpages);
+  console.log (listofpages);
   var pagecont = document.querySelector('.container .row').lastElementChild;
-  console.log ("первый проход pagecont" + pagecont);
+  console.log (pagecont);
   var buffer = pagecont; // записываем в буфер все что внутри pagecont
-  console.log ("записываем буфер" + buffer);
+  console.log (buffer);
   pagecont.innerHTML = listofpages.innerHTML; // меняем содержимое страницы на список статей
-  console.log ("переписываем pagecont" + pagecont);
-  console.log ("второй проход listofpages" + listofpages);
+  console.log (pagecont);
+  console.log (listofpages);
   listofpages.innerHTML = buffer.innerHTML; // переписыаем список страниц на популярные статьи
-  console.log ("третий проход listofpages" + listofpages);
-  delete buffer; // удаляем буфер из памяти
+  console.log (listofpages);
+  // delete buffer; // удаляем буфер из памяти
 
   
   // core.innerHTML = '<ul><li> <a href="/"> Главная </a> </li> <li>' + collection + '</li></ul>'
