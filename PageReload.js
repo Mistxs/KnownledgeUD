@@ -18,6 +18,7 @@ else if (path.includes("category")) {
 else if (path.includes("collection")) {
   level = 1;
   var listofpages = document.querySelector('.container .collection');
+  var pagecont = document.querySelector('.container .row').lastElementChild;;
   // core.innerHTML = '<ul><li> <a href="/"> Главная </a> </li> <li>' + collection + '</li></ul>'
 }
 
