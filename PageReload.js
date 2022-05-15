@@ -18,16 +18,13 @@ else if (path.includes("category")) {
 else if (path.includes("collection")) {
   level = 1;
   var listofpages = document.querySelector('.container .collection');
-  console.log (listofpages);
   var pagecont = document.querySelector('.container .row').lastElementChild;
-  console.log (pagecont);
   var buffer = pagecont; // записываем в буфер все что внутри pagecont
-  console.log (buffer);
+
+
+
   pagecont.innerHTML = listofpages.innerHTML; // меняем содержимое страницы на список статей
-  console.log (pagecont);
-  console.log (listofpages);
-  listofpages.innerHTML = buffer.innerHTML; // переписыаем список страниц на популярные статьи
-  console.log (listofpages);
+  document.querySelector('.container .collection').innerHTML = "херабора"; // переписыаем список страниц на популярные статьи
   // delete buffer; // удаляем буфер из памяти
 
   
