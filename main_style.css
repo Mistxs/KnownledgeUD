@@ -55,6 +55,20 @@ a.collection-item:hover {
     font-size: 14px!important;
 }
 
+.popular-articles li {
+
+    list-style-type: none;
+    color: #039be5 !important;
+    display: block;
+    transition: all 0.3s;
+    margin: 15px 0px 15px 15px;
+    /* margin-left: 1em; */
+}
+
+.popular-articles ul {
+    margin: 0px!important;
+}
+
 
 section .container .row div:nth-child(2) h4 {
     font-size: 1.64rem;
