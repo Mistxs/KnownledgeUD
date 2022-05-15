@@ -54,6 +54,10 @@ a.collection-item:hover {
     color: #17272f!important;
 }
 
+.collection.with-header .collection-item {
+    padding-left: 30px;
+}
+
 .with-header h4, .with-header h5
 {
     font-size: 20px!important;
@@ -78,6 +82,25 @@ a.collection-item:hover {
     margin: 0px!important;
 }
 
+.collection.with-header .collection-item {
+    list-style-type: none;
+    color: #039be5 !important;
+    display: block;
+    transition: all 0.3s;
+    margin: 15px 0px 15px 15px;
+    line-height: normal;
+    padding: initial;
+    border: none;
+}
+
+.collection .collection-item.active {
+    color: #eb722e!important;
+    background-color: inherit;
+}
+
+.collection a.collection-item:not(.active):hover {
+    color: #eb722e!important;
+}
 
 section .container .row div:nth-child(2) h4 {
     font-size: 1.64rem;
