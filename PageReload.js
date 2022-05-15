@@ -17,6 +17,7 @@ else if (path.includes("category")) {
 } 
 else if (path.includes("collection")) {
   level = 1;
+  var listofpages = document.querySelector('.container .collection');
   // core.innerHTML = '<ul><li> <a href="/"> Главная </a> </li> <li>' + collection + '</li></ul>'
 }
 
@@ -27,3 +28,4 @@ else if (path.includes("collection")) {
 // Отладка
 
 console.log ("Уровень страницы - "+level);
+console.log (listofpages);

@@ -36,7 +36,6 @@ else if (path.includes("collection")) {
 }
 
 parent.prepend(core);
-console.log ("Уровень = " + level);
   
 
 
