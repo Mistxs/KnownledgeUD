@@ -17,7 +17,7 @@ else if (path.includes("category")) {
 } 
 else if (path.includes("collection")) {
   level = 1;
-  var listofpages = document.querySelector('.container .collection');
+  var listofpages = document.querySelector('.container .collection'); // левый список со страницами
   var pagecont = document.querySelector('.container .row').lastElementChild;
   var buffer = pagecont; // записываем в буфер все что внутри pagecont
 
@@ -38,5 +38,6 @@ else if (path.includes("collection")) {
 // Отладка
 
 console.log ("Уровень страницы - "+level);
-console.log (listofpages);
-console.log (pagecont);
+console.log (listofpages.innerHTML);
+console.log (pagecont.innerHTML);
+console.log (buffer.innerHTML);
